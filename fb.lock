@@ -1,0 +1,11 @@
+# fb.lock: the exact versions this package builds with, which fb writes. Don't edit it.
+version = 1
+
+[[package]]
+name = "fbengine"
+version = "1.0.0"
+source = "https://index.futureblitz.dev/"
+checksum = "sha256:3748d694a6dae15c47eeb610f576899bba783c2d095e472200405f9fcd6c309a"
+size = 203836
+dependencies = []
+targets = { "linux-arm64" = { checksum = "sha256:26e7895c0ef1022fb46885e2cd48acb44f51dcb99cf79f41c7cc580e05aea409", size = 5976428 }, "linux-x64" = { checksum = "sha256:c67bc295449179c54ffb0c5e9bc34a6014706c565145453023c9be718a6d3b4b", size = 6342167 }, "macos-arm64" = { checksum = "sha256:91536e08b5ef26911ab37ceee0314329dc883ce04f7fb8426c954338aac467a2", size = 4409489 }, "macos-x64" = { checksum = "sha256:e4169ccbd7cb5186f0e11aed760b7cde74b44ab25032514e37dddd93d22d08a4", size = 4896865 }, "windows-x64" = { checksum = "sha256:c8f5b195b5522d1f73ebf6bdeb761a18b51ef882d6603ab52bd85420b7b75f29", size = 6609444 } }

@@ -1,0 +1,15 @@
+build/
+.fb.lock.partial-*
+
+
+# Build output
+/build/
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Local / OS
+.DS_Store
+Thumbs.db
+*.user
