@@ -1,23 +1,20 @@
 Import std.core
 Import fbengine
 Import std.math
-Import std.text
 
 Function Main() Throws GraphicsError
     Window.SetTitle("Hello")
     Try Graphics(800, 600) // opens the window (WINDOWED by default)
     Defer EndGraphics()
 
-    Local font = Font.BuiltIn(32) // no font file needed; Latin subset of Noto Sans
     Local canvas = Screen.Canvas()
+    Local cubeGeometry: Geometry = Geometry.Cube()
+    Local cube: Mesh = Mesh(cubeGeometry)
+    cube.SetPosition(Vec3(0, 0, 0))
+    cube.SetColor(Color.White)
 
-    While !KeyDown(Key.ESCAPE)
-        canvas.SetColor(Color32(30, 30, 40, 255))
-        canvas.Clear()
-
+    While !KeyDown(Key.ESCAPE) && !Window.Closed()
         canvas.SetColor(Color32(255, 255, 255, 255))
-        canvas.DrawText(font, "Hello from fbengine", 40, 40)
-
         Flip() // present + read events
     End While
 End Function
